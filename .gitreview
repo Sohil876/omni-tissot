@@ -1,0 +1,5 @@
+[gerrit]
+host=review.blissroms.com
+port=29418
+project=platform_device_qcom_sepolicy-legacy-um.git
+defaultbranch=q
