@@ -126,7 +126,8 @@ PRODUCT_PACKAGES += \
 
 # Dex
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI
+    SystemUI \
+    Launcher3
 
 # Display
 PRODUCT_PACKAGES += \
