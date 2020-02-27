@@ -153,6 +153,9 @@ PRODUCT_PACKAGES += \
     omni_charger_res_images \
     animation.txt \
     font_charger.png
+#   DeviceParts
+PRODUCT_PACKAGES += \
+    DeviceParts
 
 # DRM
 PRODUCT_PACKAGES += \
