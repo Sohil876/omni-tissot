@@ -16,4 +16,5 @@
 <resources>
     <string name="app_name">DeviceParts</string>
     <string name="advanced_settings">Device Features</string>
+    <string name="disable_hw_keys">Disable capacitive keys</string>
 </resources>
