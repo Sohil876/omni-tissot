@@ -1,0 +1,3 @@
+# FPS Info
+  chown system graphics /sys/class/graphics/fb0/measured_fps
+  chmod 0666 /sys/class/graphics/fb0/measured_fps
