@@ -56,3 +56,5 @@ set_prop(system_server, fst_prop)
 
 # Allow system server to access for dpm
 get_prop(system_server, persist_dpm_prop)
+
+add_service(system_server, applock_service);
