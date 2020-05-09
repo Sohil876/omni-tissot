@@ -155,7 +155,8 @@ PRODUCT_PACKAGES += \
     font_charger.png
 #   DeviceParts
 PRODUCT_PACKAGES += \
-    DeviceParts
+    DeviceParts \
+    OmniDisplayManager
 
 # DRM
 PRODUCT_PACKAGES += \
