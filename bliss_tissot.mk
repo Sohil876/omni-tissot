@@ -40,6 +40,9 @@ TARGET_VENDOR := Xiaomi
 TARGET_BOOT_ANIMATION_RES := 1440
 # Only needed for google dialer
 #IS_PHONE := true
+# Build type/Maintainer
+BLISS_BUILDTYPE := OFFICIAL
+BLISS_DEVELOPER := Sohil876
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
