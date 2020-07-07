@@ -38,6 +38,8 @@ TARGET_VENDOR := Xiaomi
 
 # Bootanimation resolution
 TARGET_BOOT_ANIMATION_RES := 1440
+# Only needed for google dialer
+#IS_PHONE := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
