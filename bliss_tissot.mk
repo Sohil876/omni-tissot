@@ -24,6 +24,9 @@ $(call inherit-product, device/xiaomi/tissot/device.mk)
 # Inherit some common Bliss stuff.
 $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
+# Inherit Gapps
+$(call inherit-product-if-exists, vendor/gapps/gapps.mk)
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
 PRODUCT_NAME := bliss_tissot
