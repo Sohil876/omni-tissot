@@ -25,7 +25,7 @@
     <string name="config_batCurCap">/sys/class/power_supply/bms/charge_full</string>
 
     <!-- Device specific doze package -->
-    <string name="config_customDozePackage">org.lineageos.settings.doze/org.lineageos.settings.doze.DozeSettingsActivity</string>
+    <string name="config_customDozePackage">com.custom.ambient.display/com.custom.ambient.display.DozeSettings</string>
 
     <!-- Enable Manual Sub Provisioning -->
     <bool name="config_enableManualSubProvisioning">true</bool>
