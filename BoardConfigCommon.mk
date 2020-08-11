@@ -200,9 +200,9 @@ endif
 
 # Remove unwanted packages
 TARGET_GAPPS_OVERRIDE += \
-    AudioFX \
     Email \
-    GalleryGoPrebuilt
+    GalleryGoPrebuilt \
+    NexusWallpapersStubPrebuilt2019Static
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
