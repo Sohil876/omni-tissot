@@ -1,0 +1,26 @@
+[
+  {
+    "remote":      "origin",
+    "repository":  "DerpFest-Devices/kernel_xiaomi_msm8953",
+    "target_path": "kernel/xiaomi/sdm660",
+    "revision":    "derp10"
+  },
+  {
+    "remote":      "github",
+    "repository":  "vendor_xiaomi_tissot",
+    "target_path": "vendor/xiaomi",
+    "revision":    "bliss-10"
+  },
+  {
+    "remote":      "github",
+    "repository":  "device_xiaomi_msm8953-common",
+    "target_path": "device/xiaomi/msm8953-common",
+    "revision":    "bliss-10"
+  },
+  {
+    "remote":      "github",
+    "repository":  "device_xiaomi_tissot",
+    "target_path": "device/xiaomi/tissot",
+    "revision":    "bliss-10"
+  }
+]
