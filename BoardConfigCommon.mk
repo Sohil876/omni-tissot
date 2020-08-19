@@ -166,6 +166,9 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8953
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
+# Lockscreen charging value fix
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
+
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
