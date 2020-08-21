@@ -192,7 +192,7 @@ PRODUCT_PACKAGES += \
 
 # Include remove packages
 PRODUCT_PACKAGES += \
-    RemovePackages
+    RemovePackagesTissot
 
 # Input
 PRODUCT_COPY_FILES += \
