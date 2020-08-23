@@ -205,7 +205,9 @@ endif
 TARGET_GAPPS_OVERRIDE += \
     Email \
     GalleryGoPrebuilt \
-    NexusWallpapersStubPrebuilt2019Static
+    NexusWallpapersStubPrebuilt2019Static \
+    PixelLiveWallpaperPrebuilt \
+    Jelly
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
