@@ -67,11 +67,6 @@ PRODUCT_PACKAGES += \
     camera.msm8953 \
     libmm-qcamera
 
-# Charging
-PRODUCT_PACKAGES += \
-    charger_res_images \
-    product_charger_res_images
-
 # ConsumerIr
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
