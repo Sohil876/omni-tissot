@@ -91,14 +91,110 @@ persist.debug.wfd.enable=1 \
 persist.demo.hdmirotationlock=false \
 persist.hwc.enable_vds=1 \
 persist.hwc.mdpcomp.enable=true \
+persist.sys.wfd.nohdcp=1 \
+persist.sys.wfd.virtual=0 \
 ro.opengles.version=196610 \
 ro.qualcomm.cabl=0 \
 ro.sf.lcd_density=480 \
 ro.vendor.display.cabl=2 \
 sdm.debug.disable_skip_validate=1 \
+debug.sdm.support_writeback=0 \
+vendor.display.disable_rotator_downscale=1 \
 vendor.display.disable_skip_validate=1 \
 vendor.display.enable_default_color_mode=1 \
 vendor.gralloc.enable_fb_ubwc=1
+
+# DRM
+PRODUCT_PROPERTY_OVERRIDES += \
+drm.service.enabled=true
+
+# Fingerprint
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.qfp=false
+
+# Fm
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.fm.transmitter=false
+
+# Frp
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.frp.pst=/dev/block/bootdevice/by-name/config
+
+# Graphics
+PRODUCT_PROPERTY_OVERRIDES += \
+debug.hwui.renderer=skiagl
+
+# GPS
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.gps.qc_nlp_in_use=1 \
+persist.loc.nlp_name=com.qualcomm.location \
+ro.gps.agps_provider=1
+
+# Media
+PRODUCT_PROPERTY_OVERRIDES += \
+av.debug.disable.pers.cache=1 \
+media.aac_51_output_enabled=true \
+media.msm8956hw=0 \
+media.stagefright.audio.sink=280 \
+vendor.mm.enable.qcom_parser=1048575 \
+mm.enable.smoothstreaming=true \
+media.stagefright.thumbnail.prefer_hw_codecs=true \
+mmp.enable.3g2=true \
+vendor.audio.hw.aac.encoder=true \
+vendor.vidc.dec.downscalar_height=1088 \
+vendor.vidc.dec.downscalar_width=1920 \
+vendor.vidc.disable.split.mode=1 \
+vendor.vidc.enc.disable.pq=true \
+vendor.vidc.enc.disable_bframes=1 \
+vendor.video.disable.ubwc=1
+
+# Memory optimizations
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.vendor.qti.sys.fw.bservice_enable=true
+
+# Perf
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.sys.fw.dex2oat_thread_count=8 \
+ro.vendor.extension_library=libqti-perfd-client.so
+
+# Netmgrd
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.vendor.use_data_netmgrd=true \
+persist.data.netmgrd.qos.enable=true \
+persist.vendor.data.mode=concurrent
+
+# Nitz
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.rild.nitz_plmn="" \
+persist.rild.nitz_long_ons_0="" \
+persist.rild.nitz_long_ons_1="" \
+persist.rild.nitz_long_ons_2="" \
+persist.rild.nitz_long_ons_3="" \
+persist.rild.nitz_short_ons_0="" \
+persist.rild.nitz_short_ons_1="" \
+persist.rild.nitz_short_ons_2="" \
+persist.rild.nitz_short_ons_3=""
+
+# Radio
+PRODUCT_PROPERTY_OVERRIDES += \
+DEVICE_PROVISIONED=1 \
+persist.data.qmi.adb_logmask=0 \
+persist.dbg.volte_avail_ovr=1 \
+persist.dbg.vt_avail_ovr=1 \
+persist.dbg.wfc_avail_ovr=1 \
+persist.vendor.radio.apm_sim_not_pwdn=1 \
+persist.radio.multisim.config=dsds \
+persist.vendor.radio.custom_ecc=1 \
+persist.vendor.radio.rat_on=combine \
+persist.vendor.radio.sib16_support=1 \
+persist.vendor.radio.add_power_save=1 \
+persist.vendor.data.iwlan.enable=true \
+ril.subscription.types=NV,RUIM \
+rild.libargs=-d/dev/smd0 \
+rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
+ro.telephony.call_ring.multiple=false \
+ro.telephony.default_network=22,20 \
+service.qti.ims.enabled=1
 
 # Suppress unnecessary logs on user builds
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -356,96 +452,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.log.tag.hwcomposer=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.netd=$(VENDOR_LOG_LEVEL)
 
-# DRM
-PRODUCT_PROPERTY_OVERRIDES += \
-drm.service.enabled=true
-
-# Fingerprint
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.qfp=false
-
-# Fm
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.fm.transmitter=false
-
-# Frp
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.frp.pst=/dev/block/bootdevice/by-name/config
-
-# Graphics
-PRODUCT_PROPERTY_OVERRIDES += \
-debug.hwui.renderer=skiagl
-
-# GPS
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.gps.qc_nlp_in_use=1 \
-persist.loc.nlp_name=com.qualcomm.location \
-ro.gps.agps_provider=1
-
-# Media
-PRODUCT_PROPERTY_OVERRIDES += \
-av.debug.disable.pers.cache=1 \
-media.aac_51_output_enabled=true \
-media.msm8956hw=0 \
-media.stagefright.audio.sink=280 \
-vendor.mm.enable.qcom_parser=1048575 \
-mm.enable.smoothstreaming=true \
-media.stagefright.thumbnail.prefer_hw_codecs=true \
-mmp.enable.3g2=true \
-vendor.audio.hw.aac.encoder=true \
-vendor.vidc.dec.downscalar_height=1088 \
-vendor.vidc.dec.downscalar_width=1920 \
-vendor.vidc.disable.split.mode=1 \
-vendor.vidc.enc.disable.pq=true \
-vendor.vidc.enc.disable_bframes=1 \
-vendor.video.disable.ubwc=1
-
-# Memory optimizations
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.vendor.qti.sys.fw.bservice_enable=true
-
-# Perf
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.sys.fw.dex2oat_thread_count=8 \
-ro.vendor.extension_library=libqti-perfd-client.so
-
-# Netmgrd
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.vendor.use_data_netmgrd=true \
-persist.data.netmgrd.qos.enable=true \
-persist.vendor.data.mode=concurrent
-
-# Nitz
-PRODUCT_PROPERTY_OVERRIDES += \
-persist.rild.nitz_plmn="" \
-persist.rild.nitz_long_ons_0="" \
-persist.rild.nitz_long_ons_1="" \
-persist.rild.nitz_long_ons_2="" \
-persist.rild.nitz_long_ons_3="" \
-persist.rild.nitz_short_ons_0="" \
-persist.rild.nitz_short_ons_1="" \
-persist.rild.nitz_short_ons_2="" \
-persist.rild.nitz_short_ons_3=""
-
-# Radio
-PRODUCT_PROPERTY_OVERRIDES += \
-DEVICE_PROVISIONED=1 \
-persist.dbg.volte_avail_ovr=1 \
-persist.dbg.vt_avail_ovr=1 \
-persist.dbg.wfc_avail_ovr=1 \
-persist.vendor.radio.apm_sim_not_pwdn=1 \
-persist.radio.multisim.config=dsds \
-persist.vendor.radio.custom_ecc=1 \
-persist.vendor.radio.rat_on=combine \
-persist.vendor.radio.sib16_support=1 \
-persist.vendor.data.iwlan.enable=true \
-ril.subscription.types=NV,RUIM \
-rild.libargs=-d/dev/smd0 \
-rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
-ro.telephony.call_ring.multiple=false \
-ro.telephony.default_network=22,20 \
-service.qti.ims.enabled=1
-
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.timed.enable=true
@@ -465,3 +471,6 @@ persist.vendor.usb.config.extra=none
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
 wifi.interface=wlan0
+
+# Zram disk
+ro.vendor.qti.config.zram=false
