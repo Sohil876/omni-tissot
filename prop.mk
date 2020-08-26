@@ -452,6 +452,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.log.tag.hwcomposer=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.netd=$(VENDOR_LOG_LEVEL)
 
+# SurfaceFlinger
+ro.surface_flinger.protected_contents=true
+ro.surface_flinger.vsync_event_phase_offset_ns=2000000
+ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
+ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+ro.surface_flinger.max_virtual_display_dimension=4096
+ro.min.fling_velocity=160
+ro.max.fling_velocity=20000
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.timed.enable=true
