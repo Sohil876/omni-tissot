@@ -203,11 +203,14 @@ endif
 
 # Remove unwanted packages
 TARGET_GAPPS_OVERRIDE += \
+    AudioFX \
     Email \
+    Etar \
     GalleryGoPrebuilt \
+    Jelly \
     NexusWallpapersStubPrebuilt2019Static \
     PixelLiveWallpaperPrebuilt \
-    Jelly
+    UnifiedEmail
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
