@@ -1,4 +1,3 @@
-ifeq ($(call my-dir),$(call project-path-for,qcom-media))
 
 QCOM_MEDIA_ROOT := $(call my-dir)
 
@@ -20,8 +19,6 @@ include $(QCOM_MEDIA_ROOT)/hypv-intercept/Android.mk
 
 ifeq ($(TARGET_BOARD_AUTO),true)
 include $(QCOM_MEDIA_ROOT)/libsidebandstreamhandle/Android.mk
-endif
-
 endif
 
 endif
