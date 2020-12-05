@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bliss_tissot.mk
+    $(LOCAL_DIR)/omni_tissot.mk
 
 COMMON_LUNCH_CHOICES := \
-    bliss_tissot-user \
-    bliss_tissot-userdebug \
-    bliss_tissot-eng
+    omni_tissot-user \
+    omni_tissot-userdebug \
+    omni_tissot-eng

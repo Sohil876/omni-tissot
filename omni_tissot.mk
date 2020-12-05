@@ -17,19 +17,26 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
-# Inherit from mido device
+# Get the prebuilt list of APNs
+$(call inherit-product, vendor/omni/config/gsm.mk)
+
+# Inherit from tissot device
 $(call inherit-product, device/xiaomi/tissot/device.mk)
 
-# Inherit some common Bliss stuff.
-$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
+# Inherit some common Omni stuff.
+$(call inherit-product, vendor/omni/config/common.mk)
 
 # Inherit Gapps
-$(call inherit-product-if-exists, vendor/gapps/gapps.mk)
+#$(call inherit-product-if-exists, vendor/gapps/gapps.mk)
+#Only needed for google dialer
+#IS_PHONE := true
+#TARGET_GAPPS_ARCH := arm64
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
-PRODUCT_NAME := bliss_tissot
+PRODUCT_NAME := omni_tissot
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A1
@@ -37,12 +44,7 @@ PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 
 # Bootanimation resolution
-TARGET_BOOT_ANIMATION_RES := 1440
-# Only needed for google dialer
-#IS_PHONE := true
-# Build type/Maintainer
-BLISS_BUILDTYPE := OFFICIAL
-BLISS_DEVELOPER := Sohil876
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Disable some debuggings
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
