@@ -14,8 +14,6 @@
 # limitations under the License.
 #
 
-export TEMPORARY_DISABLE_PATH_RESTRICTIONS=true
-
 VENDOR_PATH := device/xiaomi/msm8953-common
 
 # Architecture
