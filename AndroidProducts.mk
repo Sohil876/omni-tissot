@@ -17,4 +17,4 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/omni_tissot.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_tissot-userdebug
+    omni_tissot-user
