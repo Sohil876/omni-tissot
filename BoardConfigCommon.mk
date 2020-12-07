@@ -216,7 +216,7 @@ TARGET_GAPPS_OVERRIDE += \
     UnifiedEmail
 
 # SELinux
-include device/qcom/sepolicy/sepolicy_legacy.mk
+include device/qcom/sepolicy-legacy-um/sepolicy.mk
 include vendor/omni/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
 
