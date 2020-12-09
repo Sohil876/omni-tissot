@@ -71,6 +71,10 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
+# Messaging
+PRODUCT_PACKAGES += \
+   messaging
+
 # Properties
 -include device/xiaomi/tissot/prop.mk
 
