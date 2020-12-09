@@ -37,7 +37,6 @@
 
    <!-- Button brightness -->
    <bool name="config_button_brightness_support">true</bool>
-   <integer name="config_button_brightness_default">128</integer>
 
    <!-- Enable system navigation keys. -->
    <bool name="config_supportSystemNavigationKeys">true</bool>
