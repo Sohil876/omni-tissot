@@ -202,11 +202,14 @@ endif
 # Remove unwanted packages
 TARGET_GAPPS_OVERRIDE += \
     AudioFX \
+    ChromeModernPublic \
     Email \
     Etar \
     GalleryGoPrebuilt \
     Jelly \
+    MusicFX \
     NexusWallpapersStubPrebuilt2019Static \
+    Phonograph \
     PixelLiveWallpaperPrebuilt \
     UnifiedEmail
 
