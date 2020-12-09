@@ -1,0 +1,1 @@
+allow storage_file storage_file:dir { search };

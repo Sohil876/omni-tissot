@@ -1,0 +1,1 @@
+allow sysfs_kgsl_proc sysfs_kgsl_proc:file { read };
