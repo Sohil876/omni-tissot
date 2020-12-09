@@ -52,6 +52,11 @@ qcom.bluetooth.soc=smd \
 ro.bluetooth.hfp.ver=1.7 \
 ro.qualcomm.bt.hci_transport=smd
 
+# Blur
+ro.surface_flinger.supports_background_blur=0 \
+persist.sys.sf.disable_blurs=1 \
+ro.sf.blurs_are_expensive=1
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
 camera.display.lmax=1280x720 \
