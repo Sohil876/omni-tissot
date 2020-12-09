@@ -481,3 +481,7 @@ wifi.interface=wlan0
 
 # Zram disk
 ro.vendor.qti.config.zram=false
+
+#
+debug.sf.disable_backpressure=1 \
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
