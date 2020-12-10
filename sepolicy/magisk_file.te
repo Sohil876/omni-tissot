@@ -1,1 +1,0 @@
-allow magisk_file magisk_file:fifo_file { ioctl };
