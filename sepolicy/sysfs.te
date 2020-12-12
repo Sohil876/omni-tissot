@@ -1,2 +1,3 @@
 allow sysfs sysfs:dir { read };
 allow sysfs sysfs:file { getattr };
+allow sysfs sysfs:dir { open };

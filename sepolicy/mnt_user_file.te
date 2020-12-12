@@ -1,0 +1,2 @@
+allow mnt_user_file mnt_user_file:dir { search };
+allow mnt_user_file mnt_user_file:lnk_file { read };
