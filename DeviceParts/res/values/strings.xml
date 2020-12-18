@@ -16,26 +16,14 @@
 <resources>
     <string name="app_name">DeviceParts</string>
     <string name="advanced_settings">Device Features</string>
-    <string name="disable_hw_keys">Disable capacitive keys</string>
-    <string name="disable_hw_keys_summary">Disables hardware navigation buttons</string>
-    <string name="navigation_bar_show_title">Show navigation bar</string>
-    <string name="navigation_bar_show_summary">Enable navigation bar</string>
-    <string name="navigation_title">Navigation</string>
-    <string name="button_backlight_title">Button backlight</string>
-    <string name="button_backlight_summary">Configure brightness of capacitive buttons</string>
-    <string name="misc">Misc.</string>
-    <string name="double_tap_wake_title">Enable double tap to wake</string>
-    <string name="double_tap_wake_summary">Control double tap to wake</string>
 
-    <!-- Dirac -->
+    <!-- Audio -->
     <string name="audio_title">Audio</string>
-
     <!-- Dirac settings -->
     <string name="dirac_title">Mi Sound Enhancer</string>
     <string name="dirac_summary">Optimize audio quality</string>
     <string name="dirac_headset_title">Choose headphones type</string>
     <string name="dirac_preset_title">Choose a preset</string>
-
     <!-- Dirac settings: Headset types -->
     <string name="dirac_headset_default">Default</string>
     <string name="dirac_headset_earbuds">Mi Earbuds</string>
@@ -59,7 +47,6 @@
     <string name="dirac_headset_in_ear2">Mi In-Ear 2</string>
     <string name="dirac_headset_earphone_basic">Mi Earphones Basic</string>
     <string name="dirac_headset_earphone">Mi Earphones</string>
-
     <!-- Dirac settings: Equalizer presets -->
     <string name="dirac_preset_default">Default</string>
     <string name="dirac_preset_rock">Rock</string>
@@ -75,6 +62,7 @@
 
     <!-- Display -->
     <string name="display_title">Display</string>
+    <!-- Kcal -->
     <string name="display_calibration_title">Display calibration</string>
     <string name="display_calibration_summary">Calibrate display colours using KCAL</string>
     <string name="kcal_title">Display colours</string>
@@ -85,5 +73,18 @@
     <string name="kcal_blue">Blue</string>
     <string name="kcal_saturation">Saturation</string>
     <string name="kcal_contrast">Contrast</string>
+    <!-- Dt2w -->
+    <string name="double_tap_wake_title">Enable double tap to wake</string>
+    <string name="double_tap_wake_summary">Control double tap to wake</string>
 
+    <!-- Navigation -->
+    <string name="navigation_title">Navigation</string>
+    <!-- HW keys -->
+    <string name="disable_hw_keys">Disable capacitive keys</string>
+    <string name="disable_hw_keys_summary">Disables hardware navigation buttons</string>
+    <string name="button_backlight_title">Button backlight</string>
+    <string name="button_backlight_summary">Configure brightness of capacitive buttons</string>
+    <!-- Navbar -->
+    <string name="navigation_bar_show_title">Show navigation bar</string>
+    <string name="navigation_bar_show_summary">Enable navigation bar</string>
 </resources>

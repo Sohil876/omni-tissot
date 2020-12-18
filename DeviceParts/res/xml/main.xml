@@ -15,41 +15,6 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-	<PreferenceCategory
-            android:key="category_navigationbar"
-            android:title="@string/navigation_title">
-
-            <SwitchPreference
-                android:key="navigation_bar_show"
-                android:title="@string/navigation_bar_show_title"
-                android:summary="@string/navigation_bar_show_summary"
-                android:persistent="false" />
-
-         <SwitchPreference
-            android:key="hwd"
-            android:title="@string/disable_hw_keys"
-	    android:summary="@string/disable_hw_keys_summary"/>
-
-        <Preference
-            android:title="@string/button_backlight_title"
-            android:summary="@string/button_backlight_summary">
-            <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.android.settings"
-                    android:targetClass="com.android.settings.Settings$ButtonBrightnessSettingsActivity" />
-        </Preference>
-
-        </PreferenceCategory>
-
-	<PreferenceCategory
-	android:key="category_misc"
-        android:title="@string/misc">
-         <SwitchPreference
-            android:key="dt2w"
-            android:title="@string/double_tap_wake_title"
-	    android:summary="@string/double_tap_wake_summary"/> 
- 
-       </PreferenceCategory>
-
     <PreferenceCategory
         android:key="audio"
         android:title="@string/audio_title">
@@ -89,6 +54,34 @@
 		android:title="@string/display_calibration_title"
 		android:summary="@string/display_calibration_summary"/>
 
+         <SwitchPreference
+            android:key="dt2w"
+            android:title="@string/double_tap_wake_title"
+	    android:summary="@string/double_tap_wake_summary"/> 
     </PreferenceCategory>
+
+	<PreferenceCategory
+            android:key="category_navigationbar"
+            android:title="@string/navigation_title">
+
+         <SwitchPreference
+            android:key="hwd"
+            android:title="@string/disable_hw_keys"
+	    android:summary="@string/disable_hw_keys_summary"/>
+
+        <Preference
+            android:title="@string/button_backlight_title"
+            android:summary="@string/button_backlight_summary">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.android.settings"
+                    android:targetClass="com.android.settings.Settings$ButtonBrightnessSettingsActivity" />
+        </Preference>
+
+            <SwitchPreference
+                android:key="navigation_bar_show"
+                android:title="@string/navigation_bar_show_title"
+                android:summary="@string/navigation_bar_show_summary"
+                android:persistent="false" />
+        </PreferenceCategory>
 
 </PreferenceScreen>
