@@ -1,3 +1,8 @@
+# Device Parts
+/proc/touchpanel(/.*)?                          u:object_r:proc_touchpanel:s0
+/sys/devices/platform/soc/78b7000.i2c/i2c-3/3-0038/disable_keys	u:object_r:proc_touchpanel:s0
+/proc/touchpanel/capacitive_keys_disable	u:object_r:proc_touchpanel:s0
+
 # Executables
 /system/bin/chargeonlymode			u:object_r:charger_exec:s0
 

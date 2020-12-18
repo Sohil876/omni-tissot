@@ -1,0 +1,6 @@
+# DeviceParts
+allow system_app proc_touchpanel:dir search;
+allow system_app proc_touchpanel:file rw_file_perms;
+allow system_server proc_touchpanel:dir search;
+allow system_server proc_touchpanel:file rw_file_perms;
+allow system_server proc_touchpanel:lnk_file read;
