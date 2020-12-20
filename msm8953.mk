@@ -107,6 +107,11 @@ PRODUCT_COPY_FILES += \
 	$(TOPDIR)frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
 	$(TOPDIR)frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
+# Ashmemd
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/ashmemd_libs/libashmemd_client.so:$(TARGET_COPY_OUT_SYSTEM)/apex/com.android.media.swcodec/lib64/libashmemd_client.so \
+    $(LOCAL_PATH)/ashmemd_libs/ashmemd_aidl_interface-cpp.so:$(TARGET_COPY_OUT_SYSTEM)/apex/com.android.media.swcodec/lib64/ashmemd_aidl_interface-cpp.so
+
 # Board
 PRODUCT_USES_QCOM_HARDWARE := true
 PRODUCT_BOARD_PLATFORM := msm8996
