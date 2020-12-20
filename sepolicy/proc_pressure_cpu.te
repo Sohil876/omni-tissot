@@ -1,0 +1,1 @@
+allow proc_pressure_cpu proc_pressure_cpu:file { getattr };

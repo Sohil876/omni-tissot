@@ -1,4 +1,4 @@
 # Allow hal_memtrack_default to read sysfs_kgsl
 allow hal_memtrack_default sysfs_kgsl:lnk_file read;
 # Allow hal_memtrack to search sysfs_kgsl
-allow hal_memtrack sysfs_kgsl:dir search;
+allow hal_memtrack sysfs_kgsl:dir search;allow hal_memtrack_default hal_memtrack_default:binder { call };

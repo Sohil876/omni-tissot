@@ -1,0 +1,1 @@
+allow mediaswcodec_exec mediaswcodec_exec:file { getattr };

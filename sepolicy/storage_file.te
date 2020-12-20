@@ -1,2 +1,4 @@
 allow storage_file storage_file:dir { search };
 allow storage_file storage_file:lnk_file { read };
+allow storage_file storage_file:dir { search };
+allow storage_file storage_file:dir { search };

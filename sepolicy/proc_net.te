@@ -1,0 +1,2 @@
+allow proc_net proc_net:dir { add_name };
+allow proc_net proc_net:file { create };

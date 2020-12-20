@@ -1,0 +1,1 @@
+allow mnt_media_rw_file mnt_media_rw_file:dir { getattr };

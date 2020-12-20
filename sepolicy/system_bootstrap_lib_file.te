@@ -1,0 +1,2 @@
+allow system_bootstrap_lib_file system_bootstrap_lib_file:dir { getattr  read };
+allow system_bootstrap_lib_file system_bootstrap_lib_file:file { getattr };

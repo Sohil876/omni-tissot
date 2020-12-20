@@ -1,0 +1,1 @@
+allow proc_pressure_io proc_pressure_io:file { getattr };

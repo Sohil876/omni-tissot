@@ -1,0 +1,1 @@
+allow proc_pressure_mem proc_pressure_mem:file { getattr };

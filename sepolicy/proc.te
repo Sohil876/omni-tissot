@@ -1,0 +1,3 @@
+allow proc proc:file { read };
+allow proc proc:file { getattr  read  write };
+allow proc proc:filesystem { associate };
