@@ -1,1 +1,0 @@
-allow servicemanager servicemanager:binder { call };
